@@ -1,0 +1,53 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header styling */
+header {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Container for main content */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Section headings */
+h2 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+/* Gallery layout */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Image and video styling */
+.gallery img,
+.gallery video {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}

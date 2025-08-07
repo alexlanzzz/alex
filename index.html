@@ -3,35 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Step-by-Step Intro</title>
+  <title>Our Anniversary Album</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
   <link rel="stylesheet" href="css/style.css" />
-  <script src="js/script.js" defer></script>
 </head>
+<!-- fireworks/ konfetti -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 
 <body>
 
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Happy Anniversary</h1>
+    <p class="subtitle">一周年快乐!🎉✨❤️</p>
+    <p>这是属于我们两个人的网站</p>
+    <p>记录着我们这一年</p>
+    <button id="btnStart" class="btn-primary">❤</button>
+  </header>
+
+  <!-- Step 0: Video (刚点 Start 就跳到这里) -->
+  <section id="step0" class="step container">
+    <div class="card video-card">
+      <div class="video-container">
+        <video id="introVideo" controls>
+          <source src="video/anniversary.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+      <button id="btnNext0" class="btn-secondary">Next</button>
+    </div>
+  </section>
+
   <!-- Step 1: Intro text -->
-  <div id="step1" class="step active">
-    <p>Welcome! Thanks for visiting.</p>
-    <p>Click “Next” to learn more before we show the video.</p>
-    <button id="btn1">Next</button>
-  </div>
+  <section id="step1" class="step container">
+    <div class="card">
+      <p>To Rose:</p>
+      <p>感谢你这一年来的陪伴，我们两个的缘分是从什么时候开始的呢，我想应该是那一顿早茶吧。
+        很多的自恋加上不要脸，在你给我打电话后我就一发不可收拾，开始有些喜欢你，开始分享生活里的事情，开始在想下一次打电话是什么时候
+      。再之后回到了澳洲，我们开始了“长达”大约10多天的暧昧时期，当时很着急，感觉你喜欢我但是又不确定，不敢像你问太多这些事情，害怕你拒绝我然后就老死不相往来了。
+    但是后面又慢慢确定了你应该喜欢我吧，然后就试探问你要不要跟我在一起，但是你却说太急了，当时就很头疼，在想到底什么时候才算“慢慢来，比较快”的终点呢。
+  很快，我们定了见面的时间，当时很紧张在想以暧昧的身份见面会是什么样的呢，没想到刚见面的时候你居然不拘束，还主动牵我的手，感觉还是很奇妙的，感觉被你调戏了。
+那天虽然你说不确定要不要在一起，但是我心里预感非常强烈，感觉我们那天肯定会在一起，但是感觉表现不是很好，没有好好的表白也没有鲜花，只能之后补给你了。就这样我们在一起了
+</p>
+      <button id="btnNext1" class="btn-secondary">Next</button>
+    </div>
+  </section>
 
   <!-- Step 2: Follow-up text -->
-  <div id="step2" class="step">
-    <p>Here's a little more context about what you're about to see.</p>
-    <button id="btn2">Show Video</button>
-  </div>
+  <section id="step2" class="step container">
+    <div class="card">
+      <p>Each photo is a story. Click below to relive our special moments.</p>
+      <button id="btnNext2" class="btn-secondary">Next</button>
+    </div>
+  </section>
 
-  <!-- Step 3: Video section -->
-  <div id="step3" class="step">
-    <p>Enjoy the video:</p>
-    <video id="introVideo" controls>
-      <source src="video/anniversary.mp4" type="video/mp4" />
-      Your browser does not support HTML5 video.
-    </video>
-  </div>
+  <!-- Step 3: 原来的视频区，现在改为卡片 -->
+  <section id="step3" class="step container">
+    <div class="card">
+      <p>Here’s one of our favorite memories—feel free to scroll through the album below!</p>
+      <!-- 如果需要可以加个按钮或直接放相册 -->
+    </div>
+  </section>
 
-  <script src="script.js" defer></script>
+  <script src="js/script.js" defer></script>
 </body>
 </html>
